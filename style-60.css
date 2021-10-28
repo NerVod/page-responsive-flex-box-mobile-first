@@ -1,0 +1,192 @@
+body {
+    font-size: 1em;
+    margin: 0;
+    padding-top: 0;
+    background-color:whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+    background-color: papayawhip;
+    display: flex;
+    justify-content: center;
+    height : 2.5em;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 0 0 25px 25px;
+    border: 2px solid orange;
+    border-top: 0; 
+    font-size: 2.5em;
+
+}
+
+nav {
+    margin: 3px auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav li {
+    background-color: orange;
+    height: 22px;
+    padding: 3px 20px 2px;
+    border-radius: 12px 12px;
+}
+
+ nav a {
+    text-decoration: none;
+    color: whitesmoke;  
+}
+
+/* ************************************************************************************** */
+/* ********************************      SECTION      *********************************** */
+/* ************************************************************************************** */
+
+h2 {
+    color: orange;
+    font-size: 2em;
+}
+
+section {
+    margin : 2px 10px;
+}
+
+/* ************************************************************************************** */
+/* ********************************       ASIDE       *********************************** */
+/* ************************************************************************************** */
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 800px;
+}
+
+.un {
+    background-image: url(S1.jpg);
+    background-size: cover;
+    flex-basis: 100%;
+    display: flex;
+    align-items: flex-end ;
+    
+}
+.deux {
+    background-image: url(symbioz.jpg);
+    background-size: cover;
+    flex-basis: 100%;
+    display: flex;
+    align-items: flex-end ;
+}
+.trois {
+    background-image: url(mercedes.jpg);
+    background-size: cover;
+    flex-basis: 100%;
+    display: flex;
+    align-items: flex-end ;
+}
+.quatre {
+    background-image: url(e-legend.jpg);
+    background-size: cover;
+    flex-basis: 100%;
+    display: flex;
+    align-items: flex-end ;
+}
+
+aside p {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    background-color: rgba(247, 244, 244, 0.7);
+    margin-bottom: 0px;
+    
+}
+
+footer {
+    background-color: orange;
+    color: whitesmoke;
+    text-align: center;
+    height: 25px;
+
+}
+
+
+
+
+
+@media screen and (min-width : 640px) and (max-width: 1024px) {
+    
+    h2 {
+        font-size: 1.8em;
+    }
+
+    aside {
+        height:560px;
+        width: 99%;
+        margin: 0 auto;
+        border-radius: 10px;
+        overflow:hidden;
+    }
+    .un, .deux, .trois, .quatre {
+        flex-basis: 50%;
+        height: 280px;
+    }
+
+    footer {
+        margin-top: 5px;
+    }
+
+
+}
+
+@media screen and (min-width: 1025px){
+    body {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    section {
+        display: flex;
+    }
+
+    aside {
+        height: 990px;
+    }
+
+    .un, .deux, .trois, .quatre {
+        height: 330px;
+    }
+
+.un{
+    order: 3;
+    background-position-y: -80px;
+}
+.deux{
+    order: 2;
+    flex-basis: 50%;
+    
+}
+.trois{
+    order: 4;
+    background-position-y: -80px;
+    
+}
+.quatre{
+    order: 1;
+    flex-basis: 50%;
+}
+
+
+
+
+}
+
